@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">UnitConverter</string>
+    <string name="unit_converter">Unit Converter</string>
+    <string name="convert_from">Convert From:</string>
+    <string name="enter_numerical_value">Enter Numerical Value</string>
+    <string name="enter_value_to_be_converted">Enter value to be converted:</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="empty" />
+    <string name="enter_value">Enter value</string>
+    <string name="convert">Convert!</string>
+
+    <string-array name = "baseUnits">
+        <item> Length </item>
+        <item> Mass </item>
+        <item> Temperature </item>
+        <item> Time </item>
+    </string-array>
+
+    <string-array name = "lengthUnits">
+        <item> Inches </item>
+        <item> Feet </item>
+        <item> Yards </item>
+        <item> Miles </item>
+        <item> Millimeter </item>
+        <item> Centimeters </item>
+        <item> Meters </item>
+        <item> Kilometers </item>
+    </string-array>
+
+    <string-array name = "massUnits">
+        <item> Ounces </item>
+        <item> Pounds </item>
+        <item> Milligrams </item>
+        <item> Grams </item>
+        <item> Kilograms </item>
+    </string-array>
+
+    <string-array name = "temperatureUnits">
+        <item> Fahrenheit </item>
+        <item> Celsius </item>
+        <item> Kelvin </item>
+    </string-array>
+
+    <string-array name = "timeUnits">
+        <item> Seconds </item>
+        <item> Minutes </item>
+        <item> Hours </item>
+    </string-array>
+</resources>
