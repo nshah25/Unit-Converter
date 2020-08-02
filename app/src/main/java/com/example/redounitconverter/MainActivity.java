@@ -102,7 +102,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         TextView displayResult = findViewById(R.id.convertedVal);
 
         //Loop through units array until the unit is found, keep track of the index of the unit, and then multiply the given value by the calculated conversion value
-        for (int i = 0; i < lengthUnits.length; i++) {
+        for (int i = 0; i < lengthUnits.length; i++)
+        {
             if (lengthUnits[i].equals(convertFrom)) {
                 userConvertFrom = i;
             }
@@ -233,7 +234,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         //Create two arrays that store the unit and conversion factor to loop through later on
         String[] timeUnits = new String[]{"Seconds", "Minutes", "Hours"};
-        double[] timeValues = new double[]{60, 1, 0.0166667};
+        double[] timeValues = new double[]{1, 60, 3600};
 
         //Loop through units array until the unit is found, keep track of the index of the unit, and then multiply the given value by the calculated conversion value
         for (int i = 0; i < timeUnits.length; i++) {
@@ -243,7 +244,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             if (timeUnits[i].equals(convertTo)) {
                 userConvertTo = i;
             }
-            result = result * timeValues[userConvertFrom] / timeValues[userConvertTo];
+        }
+            result = result * (timeValues[userConvertFrom] / timeValues[userConvertTo]);
             if(result > 1000000 || result < 0.001)
             {
                 displayResult.setText(String.valueOf(String.format("%.3E", result)));
@@ -252,7 +254,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             {
                 displayResult.setText(String.valueOf(setDecimal.format(result)));
             }
-        }
     }
 
 
